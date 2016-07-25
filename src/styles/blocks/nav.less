@@ -1,0 +1,48 @@
+.nav {
+  background-color: #565656;
+
+  &__list {
+    padding: 10px 0;
+    display: flex;
+  }
+
+  &__el {
+    position: relative;
+    margin: 8px 0;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .8px;
+
+    .badge {
+      top: -35px;
+      right: 20px;
+    }
+
+    a {
+      padding: 10px;
+      margin: 0 10px;
+      color: #fff;
+      font-weight: 200;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background-color: @greenLight;
+        border-radius: 4px;
+      }
+    }
+
+    i {
+      padding-left: 6px;
+    }
+
+    &:after {
+      display: inline-block;
+      vertical-align: middle;
+      content: '';
+      width: 2px;
+      height: 23px;
+      border-right: 1px solid #676767;
+      background: #454545;
+    }
+  }
+}
